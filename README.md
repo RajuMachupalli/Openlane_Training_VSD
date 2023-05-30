@@ -30,3 +30,7 @@ the run folder
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dbd3ce8e-f5f2-4bd0-91d2-e2c25ad8a771)
 
 config.tcl file created in the run folder. can observe clock period set similar to one existing 24.73
+
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/58c726e2-15e0-4396-a00f-2e4fd2d848bf)
+
+synthesis results: part of it to show dflipflop ratio
