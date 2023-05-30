@@ -11,6 +11,7 @@ example project picrorv32a directory has above files
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/72e6cb81-8bf7-41dd-852a-ac5ead633c2d)
 
 how does the config.tcl file looks
+
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/1f309fbb-a57f-47e6-8af2-4e5453e2df4d)
 
 how the existing file looks, specially clock period
@@ -26,3 +27,6 @@ updated picorv32a directory after preparation command, additiona;l run folder is
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/0f6db329-beb5-439d-b556-a1a83c8fe759)
 the run folder
 
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dbd3ce8e-f5f2-4bd0-91d2-e2c25ad8a771)
+
+config.tcl file created in the run folder. can observe clock period set similar to one existing -----
