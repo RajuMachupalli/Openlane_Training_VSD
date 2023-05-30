@@ -29,4 +29,4 @@ the run folder
 
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dbd3ce8e-f5f2-4bd0-91d2-e2c25ad8a771)
 
-config.tcl file created in the run folder. can observe clock period set similar to one existing -----
+config.tcl file created in the run folder. can observe clock period set similar to one existing 24.73
