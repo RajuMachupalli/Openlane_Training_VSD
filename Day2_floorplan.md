@@ -12,4 +12,6 @@ Pre-placed cells: The design has many blocks. Each block is made such that its h
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/4cac7f4a-5496-4353-bdef-742a54f2d785)
 
 To avoid the voltage drop (cross counpling?) due to resistance in metal, decoupling capacitance is added around the pre-placed cells or blocks.
-Power planning: when large size bus or connection between modules changes state from one to zero, large amount of current is flows to ground. At certain point, the ground might show at higher voltage then noise margin causing undfined state instead of ground state (ground bump?). simillary when changing from zero to one huge voltage drop may cause droup in vdd 
+Power planning: when large size bus or connection between modules changes state from one to zero, large amount of current is flows to ground. At certain point, the ground might show at higher voltage then noise margin causing undfined state instead of ground state (ground bump?). Simillarly when changing from zero to one huge voltage drop may cause droup in vdd, droping below the noise level may cause undefined state
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/98bd545c-1c63-46ca-b069-8b00d424d168)
+to avaoid this ptoblem, power lines/ mesh are planned such that required cuttents are drawn from nearest power souce to pull or pull down the logic as frequently as possible.
