@@ -29,4 +29,10 @@ I also could not see few parameters set at config.tcl file in design directory s
 floor plan log file shows as below, but expected lot of details as shown in videos.
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/87cb8c03-e2ea-4b42-b6b4-38301166a0ea)
 
+To see the acutal floorplan, we need to use magic tools. magic tool needs tech file from sky130A pdk, and lef file (merged lef file from tech lef and cell lef) present in tmp folder, and then def file (results/floorplan folder).
+# what are these .def, .lef and .tech files??
+## Placement
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/abf20ad4-4487-4d30-91ed-f5f294103fd1)
+
+in the placement, do we place cell like above images manually? or openlane will takecare of it?
 
