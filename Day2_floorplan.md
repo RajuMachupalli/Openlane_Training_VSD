@@ -21,3 +21,12 @@ steps: 1. Utilization factor
         4. Power planning : Vdd and Vss lines
         5. Pin placement : IO pins placement, pin pads
         6. Logical cell placement blockage: to block floor planning to use are around pin pads (between core and die)
+        
+Initially I could not find floorplan.tcl in configuration folder so I run run_floorplan command and saw floorplan.tcl file.
+I also could not see few parameters set at config.tcl file in design directory so i modified as follows:
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/a41de427-7c25-47bb-bdc7-1814f8e021cb)
+
+floor plan log file shows as below, but expected lot of details as shown in videos.
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/87cb8c03-e2ea-4b42-b6b4-38301166a0ea)
+
+
