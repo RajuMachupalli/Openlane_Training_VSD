@@ -31,4 +31,8 @@ the soure and drains are dopped in P+NP-, N+PN- to eliminate #Hotelectron effet 
 
 
 
-6. bd
+6. Source darin formation
+anisotrophic etch for side ball spacers
+Thin screen oxide to avoid channeling effect. In channeling effect, implat ions may go deeper into substrate to avoid it direction is randomized by screen oxide. 
+
+7. ndckjsd
