@@ -10,3 +10,13 @@ Its important to consider width and height of cmos and nmos for layout creation.
 
 Instead of designing inverter layout, we coping the git repo https://github.com/RajuMachupalli/vsdstdcelldesign use the magic tool and sky130a tech file to open the layout.
 
+## 16-mask CMOS process
+
+1. Substract: p-type substract
+2. Creating active regions for transistors: MASK1
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/b7746d88-204c-4a93-8d1c-81883f45418b)
+
+3. N-well and P-well creation:
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dd7289fa-6818-4973-bec3-3c5c37183a11)
+
+4. Formation of gate
