@@ -22,7 +22,13 @@ Instead of designing inverter layout, we coping the git repo https://github.com/
 4. Formation of gate
 gate formation define the threshold voltage as below screen shot
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/7e3b74a1-c04b-4e62-a202-98d047463cd2)
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/e982c73e-0b55-4619-aed3-dffb038bc27c)
 
 
 
-5. z,nnx
+5. Lightly dopped darin formation:
+the soure and drains are dopped in P+NP-, N+PN- to eliminate #Hotelectron effet and #short channel effect.
+
+
+
+6. bd
