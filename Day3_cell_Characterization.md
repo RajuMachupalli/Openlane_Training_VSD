@@ -46,7 +46,10 @@ deposit titanium on wafer using sputterion. titanium has low resistance. In sput
 
 
 8. Higher level metal formation:
+Non-planer surce is not good for metals as it forms edges. So deposit 1um of SiO2 dopped with phosphoros or boron. Use CMP technique to planarize the surface
+Tungustan is used as contacts, TiN is used as adhesive layer. mask 14 and higher is used for higher level contacts.
 
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/4f32af42-e6de-4019-be48-0d8d5ba12786)
 
 
 9. scb
