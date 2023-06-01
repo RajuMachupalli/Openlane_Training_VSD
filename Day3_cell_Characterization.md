@@ -20,3 +20,9 @@ Instead of designing inverter layout, we coping the git repo https://github.com/
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dd7289fa-6818-4973-bec3-3c5c37183a11)
 
 4. Formation of gate
+gate formation define the threshold voltage as below screen shot
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/7e3b74a1-c04b-4e62-a202-98d047463cd2)
+
+
+
+5. z,nnx
