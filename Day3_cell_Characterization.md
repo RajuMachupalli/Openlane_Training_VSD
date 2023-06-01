@@ -17,6 +17,7 @@ Instead of designing inverter layout, we coping the git repo https://github.com/
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/b7746d88-204c-4a93-8d1c-81883f45418b)
 
 3. N-well and P-well creation:
+Drive-in-diffusion to penetrate implants into substrate.
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dd7289fa-6818-4973-bec3-3c5c37183a11)
 
 4. Formation of gate
@@ -28,11 +29,25 @@ gate formation define the threshold voltage as below screen shot
 
 5. Lightly dopped darin formation:
 the soure and drains are dopped in P+NP-, N+PN- to eliminate #Hotelectron effet and #short channel effect.
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/add100ff-dd34-49f7-9834-aee48a3e9f44)
 
 
-
-6. Source darin formation
+6. Source darin formation:
 anisotrophic etch for side ball spacers
-Thin screen oxide to avoid channeling effect. In channeling effect, implat ions may go deeper into substrate to avoid it direction is randomized by screen oxide. 
+Thin screen oxide to avoid channeling effect. In channeling effect, implat ions may go deeper into substrate to avoid it direction is randomized by screen oxide.
+Anealing is a process similar to drive-in for penetarting implants further into well.
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/d9a3869a-fdef-48e6-8aa6-cbce3e08af98)
 
-7. ndckjsd
+
+7. Contacts and interconnects:
+etch thin screen oxide in HF solution
+deposit titanium on wafer using sputterion. titanium has low resistance. In sputtering, Argon gas are hit on Ti surface and deposited on wafer.
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/ab8f04ff-b095-43e1-b33a-107142f4df03)
+
+
+8. Higher level metal formation:
+
+
+
+9. scb
+10. dncjkd
