@@ -2,6 +2,7 @@
 1. get the number of gates or standard cells and its dimiensins from synthesis.
 2. difference between core and die?
 3. what are .lef, .def, and .tech file?
+4. Euler's path and stick digarms?
 
 # Day2 Floor plan session
 
@@ -55,5 +56,12 @@ Cell design flow has three steps:
 1. inputs
 2. design steps
 3. outputs
-inputs: process design kits (pdks), DRS and LVS rules, spice model, library and user defined specs. Tech files have lamda based design rules. spice model parameters are equations from spice model for threshold, linear region, saturation voltage. user defined specs are: voltage, cell height, fan-in and fan-out strength, contact metal, pin location
-Design steps: circuit design, layout and characterization. In circuit design, 
+inputs: process design kits (pdks), DRS and LVS rules, spice model, library and user defined specs. Tech files have lamda based design rules. spice model parameters are equations from spice model for threshold, linear region, saturation voltage. user defined specs are: voltage, cell height, fan-in and fan-out strength, contact metal, pin location.
+
+Design steps: circuit design, layout, and characterization. 
+In circuit design, define the different parameters like threshold and get width and hights of nmos and pmos (Wp and Lp, Wn and Ln) similar to follwing image. Circuit design produce CDL (circuit discription langiage). 
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/88297567-9a53-42b8-8111-3092385d611e)
+
+In layout design: Draw the circuit and get pmos, nmos graphs. Use the Euler's path and stick digarm to get the layout. MAgic tool is an opensource toll to draw layout. The layout produce the outputs: GDSII - layout schematic, Lef - width and height of cell, extracted spice netlisf (.cir) - information about parasetics, resistance and capacitance of every element in layout.
+
+In characterization: we have inputs from layout, circuit, spice extracted model, nmos and pmos parameters. First step is to read the model files (nmos and pmos from foundary). Second read the extracted spice netlist, third is to  recognise the circuit behaviour and fourth step is to simulation setup with power and input sources and output capacitances. Generate dc and transcient behaviour. Feed all these to characterization software called ## GUNA. GUNA gives timing, power and noise characerization.
