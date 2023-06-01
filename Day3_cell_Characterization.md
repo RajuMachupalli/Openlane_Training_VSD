@@ -8,3 +8,5 @@
 Its important to consider width and height of cmos and nmos for layout creation. The parameters play a role in inverter characteristics and power consumption. The below images should give some hints on device characters.
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/2cb4ef9c-bdcc-48b0-a712-f9ec8f885823)
 
+Instead of designing inverter layout, we coping the git repo https://github.com/RajuMachupalli/vsdstdcelldesign use the magic tool and sky130a tech file to open the layout.
+
