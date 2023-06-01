@@ -43,3 +43,17 @@ steps:
         3. Optimized placement
         
  repeaters are dummy buffers for signal integrity.
+ 
+ The placementt has two stages: global placement (coarse placement) and detail placement. legalization happens in detail placement. The aim of global placement is to reduce the wire length. openlane follows half parameters wire length.
+ 
+ ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/7bae06ee-a00c-4a7a-babf-714e95a0438d)
+
+running placement does not giving the right results, no iterations happen and it looks completely different than lecture slide.
+
+# Cell design flow
+Cell design flow has three steps:
+1. inputs
+2. design steps
+3. outputs
+inputs: process design kits (pdks), DRS and LVS rules, spice model, library and user defined specs. Tech files have lamda based design rules. spice model parameters are equations from spice model for threshold, linear region, saturation voltage. user defined specs are: voltage, cell height, fan-in and fan-out strength, contact metal, pin location
+Design steps: circuit design, layout and characterization. In circuit design, 
