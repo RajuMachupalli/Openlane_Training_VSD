@@ -37,9 +37,12 @@ ext2spice cthresh 0 rthresh 0
 
 ext2spcie
 
-// sky130_inv.spice is created
+// sky130_inv.spice is created, edit the .spice file to include nmos, pmos models and transient sweep parameters.
+// spice deck file is ready, now we can run spice simulation
 
+ngspice sky130_inv.spice
 
+plot y vs time a //drawing the sweep plot and calculate propoagation delays
 
 
 ### Lef file generaytion and integration
