@@ -1,1 +1,2 @@
 Example gitlink for documents: https://github.com/Devipriya1921/Physical_Design_Using_OpenLANE_Sky130
+Magic tool: http://opencircuitdesign.com/magic/
