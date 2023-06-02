@@ -51,6 +51,10 @@ Tungustan is used as contacts, TiN is used as adhesive layer. mask 14 and higher
 
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/4f32af42-e6de-4019-be48-0d8d5ba12786)
 
+## Tech files lab
+The generated .spice file has different data as shown below
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dc87f6f2-6251-40fc-97fe-2c42aa8cfe6c)
 
+I changed pmos and nmos to pshort and nshort_model.0 as shown in libs/nmos.lib. also added the input pulse, transient sweep parameters and vdd voltage. 
 9. scb
 10. dncjkd
