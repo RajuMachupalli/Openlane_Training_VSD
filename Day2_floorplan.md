@@ -1,7 +1,9 @@
 # To Do
 1. get the number of gates or standard cells and its dimiensins from synthesis.
 2. difference between core and die?
-3. what are .lef, .def, and .tech file?
+3. what are .lef, .def, and .tech file? 
+        LEF - library exchange format - contains only metal layers information
+        DEF - 
 4. Euler's path and stick digarms?
 
 # Day2 Floor plan session
