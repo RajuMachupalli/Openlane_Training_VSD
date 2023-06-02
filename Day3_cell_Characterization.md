@@ -55,10 +55,10 @@ Tungustan is used as contacts, TiN is used as adhesive layer. mask 14 and higher
 The generated .spice file has different data as shown below
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dc87f6f2-6251-40fc-97fe-2c42aa8cfe6c)
 
-I changed pmos and nmos to pshort and nshort_model.0 as shown in libs/nmos.lib. also added the input pulse, transient sweep parameters and vdd voltage. 
+I changed pmos and nmos to pshort_model.0 and nshort_model.0 as shown in libs/nmos.lib and libs/pmos.lib. also added the input pulse, transient sweep parameters and vdd voltage. 
 
 Now we need to generate LEF files to use in openlane.
 
 ## magic DRC
-9. scb
-10. dncjkd
+Technology files for magic tools tells everything about metal layers, colors, shapes, connectivity, DRC rules, GDSII generation rules, device extraction rules for generating netlist, def and lef file reading, wiring and much more.
+
