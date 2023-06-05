@@ -16,7 +16,17 @@ Its important to consider width and height of cmos and nmos for layout creation.
 Instead of designing inverter layout, we cloned the git repo https://github.com/RajuMachupalli/vsdstdcelldesign, the repo has .mag file (what is .mag file and how to generate it?). Magic tool with tech file and .mag file opens the layout as shown below
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/8309971b-74b3-4dec-8c52-1c9d909fe836)
 
-To extarct .spice file, in the tkcon window use extract all command which generates .ext file and use it to generate .spice file (ext2spice cthresh 0 rthresh 0, ext2spcie).  
+To extarct .spice file, in the tkcon window use extract all command which generates .ext file and use it to generate .spice file (ext2spice cthresh 0 rthresh 0, ext2spcie).
+The generated .spice (sky130_inv.spice) file has different data as shown below
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dc87f6f2-6251-40fc-97fe-2c42aa8cfe6c)
+
+I changed pmos and nmos to pshort_model.0 and nshort_model.0 as shown in libs/nmos.lib and libs/pmos.lib. also added the input pulse, transient sweep parameters and vdd voltage. 
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/62a4fcd7-68c1-4233-968c-a680e1a3fb31)
+
+do simulation using the command ngspice sky130_inv.spice. The simulation result is shown in the follwing figure. The rise and fall times are measured.
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/0c209ccc-3af6-4766-8bd9-b0b705833e6e)
+
+From layout, we created the spice model and edited it to include sky130 technology nmos and pmos. Now we need to generate LEF files to use in openlane. Day4 covers the remaining steps.
 
 
 ## 16-mask CMOS process
@@ -60,21 +70,8 @@ Tungustan is used as contacts, TiN is used as adhesive layer. mask 14 and higher
 
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/4f32af42-e6de-4019-be48-0d8d5ba12786)
 
-## Tech files lab
-The generated .spice (sky130_inv.spice) file has different data as shown below
-![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/dc87f6f2-6251-40fc-97fe-2c42aa8cfe6c)
-
-I changed pmos and nmos to pshort_model.0 and nshort_model.0 as shown in libs/nmos.lib and libs/pmos.lib. also added the input pulse, transient sweep parameters and vdd voltage. 
-![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/a76c5103-e6f3-4031-9e60-b496face7f73)
-![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/9ee8fa65-34a1-425f-b63d-4e3adf921d3d)
-
-do simulation using the command ngspice sky130_inv.spice. The simulation result is shown in the follwing figure
-![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/0c209ccc-3af6-4766-8bd9-b0b705833e6e)
 
 
-
-
-Now we need to generate LEF files to use in openlane.
 
 ## magic DRC
 Technology files for magic tools tells everything about metal layers, colors, shapes, connectivity, DRC rules, GDSII generation rules, device extraction rules for generating netlist, def and lef file reading, wiring and much more.
