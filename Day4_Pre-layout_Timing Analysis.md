@@ -8,3 +8,11 @@ LEF file is created using command lef write in tkcon window. The generated lef f
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/93512fcc-bff7-454a-8e0d-4d0d767ea1bf)
 
 ## Plugin the inv cell into picorv32a design
+Now, we can plugin the customized inverter cell into picorv32a design and run routing.
+1. copy the lef file into picorv32a/src folder.
+2. copy .lib/*.lib files into picorv32a/src folder
+3. edit config.tcl at /picorv32a/ 
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/a7965516-3cd0-417b-a2b1-702973bd0299)
+
+
+4. dvcmasdb
