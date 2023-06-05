@@ -12,7 +12,15 @@ Now, we can plugin the customized inverter cell into picorv32a design and run ro
 1. copy the lef file into picorv32a/src folder.
 2. copy .lib/*.lib files into picorv32a/src folder
 3. edit config.tcl at /picorv32a/ 
-![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/a7965516-3cd0-417b-a2b1-702973bd0299)
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/acf873d7-0df5-413b-9522-3426f355d606)
+
+
+set lefs  [glob $::env(DESIGN_DIR)/src/*.lef]
+
+add_lefs -src $lefs
+
+and run the synthesis, the synthesis was successful and inv cell is added to the design as shown below.
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/d6d0917f-4332-4588-bd77-20259f192d90)
 
 
 4. dvcmasdb
