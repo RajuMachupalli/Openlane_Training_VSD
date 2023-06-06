@@ -42,7 +42,13 @@ After:
   Tns: -693
   Wns: -24.27
   Area: 147209.93
-![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/d70b7163-2ead-49a9-a437-ae651160b976)
 
 
-4. dvcmasdb
+after placement: 
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/d77b337d-c026-4445-ab3f-ce251605a6ed)
+
+
+## Timing Analysis
+setup time: time required to set the inputs before the clock occurs.
+
+clock jitter/uncertainity: Temperory variation of clock priod.
