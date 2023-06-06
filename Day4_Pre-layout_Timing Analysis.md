@@ -22,5 +22,27 @@ add_lefs -src $lefs
 and run the synthesis, the synthesis was successful and inv cell is added to the design as shown below.
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/d6d0917f-4332-4588-bd77-20259f192d90)
 
+now change the synthesis stategy:
+check: $::env(synth_strategy) => AREA 0
+
+change value:
+set ::env(SYNTH_STRATEGY) "AREA 1"
+
+set ::env(SYNTH_SIZING) 1
+
+re running synthesis could not rewrite the existing work so I had to change the prep and set values before synthesis
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/af70fa37-5603-4d85-9b58-f9727ba8eb3b)
+
+Before:
+  Tns = -711.59
+  Wns = -23.89
+  Area = 147712.92
+
+After:
+  Tns: -693
+  Wns: -24.27
+  Area: 147209.93
+![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/d70b7163-2ead-49a9-a437-ae651160b976)
+
 
 4. dvcmasdb
