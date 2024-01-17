@@ -1,17 +1,16 @@
-# Design stepe
-1. Logic synthesis : RTL to gate level netlist
-2. Floor planning : Define the core and die size, core utilization. Also defines the IO pads and power trails. 
-3. Placement : Placing gates with less delay or wire length
-4. Clock tree synthesis (CTS): 
-5. Routing
-6. Static timimg analysis
+# Design steps
+1. Logic synthesis: RTL to gate level netlist
+2. Floor planning: Define the core and die size, IO pads and power trails. Results core utilization. 
+3. Placement: Placing gates with less delay or wire length
+4. Clock tree synthesis (CTS): Route the clock tree with minimum clock skew across the core.
+5. Routing: Place and route the netlist.
+6. Static timimg analysis: Post-CTS timining analysis.
 
 
-# openlane_test
-As a part of open lane project training from vsdworkshop
+# Openlane_test
+As a part of Openlane training, virtual disk with all the required tools installed is provided. Some design example are provided as shown in the below figure 
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/4397d506-142e-4e1c-ad9c-0a81774e4cf4)
-/n
-image showss the existing project example
+
 
 ![image](https://github.com/RajuMachupalli/openlane_test/assets/52839597/8775dc0e-1b3f-4b30-a097-3ef24af54a60)
 /n
